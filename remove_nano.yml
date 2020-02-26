@@ -1,0 +1,8 @@
+---
+- name: Remove Nano
+  hosts: all
+  become: yes
+
+  yum:
+    name: nano
+    state: absent
