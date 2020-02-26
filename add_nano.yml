@@ -1,0 +1,9 @@
+---
+- name: Add Nano
+  hosts: all
+  become: yes
+  tasks:
+  - name: add nano
+    yum:
+      name: nano
+      state: present
